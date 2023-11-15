@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/arjuntraj/ArjunKit.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/arjuntraj/ArjunKit.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,9 +89,10 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "ArjunKit"
+  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
+  # spec.source_files  = "ArjunKit"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
